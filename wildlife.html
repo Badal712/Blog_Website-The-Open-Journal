@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal wildlife</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE6;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .wildlife_card {
+            background-color: #e8dfca;
+            width: 100%;
+            height: 100vh;
+            padding: 40px 100px;
+            display: flex;
+        }
+        .card_cover{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            padding: 20px;
+        }
+        .left_section{
+            background: #f5efe6;
+            width:50%;
+        }
+        .wildlife_card img {
+            width: 700px;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .right_section{
+            background: #f5efe6;
+            padding:30px;
+            width: 50%;
+        }
+        .wildlife_card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: "Great Vibes", cursive;
+            color: #1A4D2E;;
+        }
+
+        #wildlife_bio {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        #wildlife_content{
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .comment-section{
+            width:100%;
+            display: none;
+        }
+        .comment-section h4{
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color:#1A4D2E;
+            font-weight: 600;
+        }
+        .comment-box{
+            display: flex;
+            flex-direction: column;
+        }
+        .comment-box #commentInput{
+            border-radius: 10px;
+            padding:8px;
+            border: none;
+            margin-bottom: 10px;
+        }
+        .comments-list{
+            width:100%;
+            background: white;
+            color: #4f6f52;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); */
+            display: none;
+            min-height: 40px;
+        }
+        .button-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .button-group button{
+            width: 140px;
+            height: 38px;
+            border-radius: 5px;
+            border: none;
+            background: #4f6f52;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: none;
+        }
+        .button-group button:hover{
+            background-color: #1A4D2E;
+        }
+        .back_button {
+            background-color: #4f6f52;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back_button:hover {
+            background-color: #1A4D2E;
+        }
+        .like-comment-section{
+            position:absolute;
+            bottom: 40px;
+            left:150px;
+        }
+        .lc-btn{
+            background: transparent;
+            border:none;
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        .comment-btn{
+            width:24px;
+            position: absolute;
+            left: 50px;
+        }
+        .like-comment-section .likeImg{
+            width: 24px;
+        }
+        .like-comment-section .like-btn-img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Blog Name -->
+        <a href="#" class="logo">The Open Journal</a>
+        <!-- Navigation Menu -->
+        <div class="group">
+            <ul class="navigat">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- Search Bar -->
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menu"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Search . . ">
+        </div>
+    </header>
+
+    <div class="wildlife_card">
+        <div class="card_cover">
+            <div class="left_section">
+                <img id="wildlife_image" alt="Animal Image">
+
+                <!-- Like Section -->
+                <div class="like-comment-section">
+                    <button class="lc-btn" id="likeBtn1"><img class="likeImg nLike" src="./Image/heart.png" alt="Like"> <span id="likeCount">0</span></button>
+                    <button class="lc-btn like-btn-img" id="likeBtn2"><img class="likeImg like" src="./Image/heart (1).png" alt="Like"></button>
+                    <button class="lc-btn comment-btn" id="commentBtn"><img class="commentImg" src="./Image/chat.png" alt="comment"></button>
+                </div>
+            </div>
+            <div class="right_section">
+                <h1 id="wildlife_name">Animal Name</h1>
+                <p id="wildlife_bio">Animal Description</p>
+                <p id="wildlife_content">Animal content</p>
+
+                <!-- Comment Section -->
+                <div class="comment-section" id="comment-section">
+                    <h4>Leave a Comment:</h4>
+                    <div class="comment-box">
+                        <textarea id="commentInput" rows="3" placeholder="Write a comment..."></textarea>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="button-group">
+                    <button id="commentBttn">Post Comment</button>
+                    <a href="index.html" class="back_button">Back to Home</a>
+                </div>
+
+                <div class="comments-list" id="commentsList">
+                    <!-- Comments will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve the parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const bio = urlParams.get('bio');
+        const content = urlParams.get('details');
+        const imageUrl = urlParams.get('imageUrl');
+
+        // Set the content on the wildlife page
+        document.getElementById('wildlife_name').textContent = decodeURIComponent(name);
+        document.getElementById('wildlife_bio').textContent = decodeURIComponent(bio);
+        document.getElementById('wildlife_content').textContent = decodeURIComponent(content);
+        document.getElementById('wildlife_image').src = decodeURIComponent(imageUrl);
+        document.getElementById('wildlife_image').alt = decodeURIComponent(name);
+
+        // Like functionality
+        const likeBtn1 = document.getElementById('likeBtn1');
+        const likeBtn2 = document.getElementById('likeBtn2');
+        const likeCountSpan = document.getElementById('likeCount');
+        let likeCount = 0;
+
+        likeBtn1.addEventListener('click', () => {
+            likeCount++;
+            likeCountSpan.textContent = likeCount;
+            likeBtn2.style.display = 'inline-block';
+        });
+
+        // Comment functionality
+        const commentBttn = document.getElementById('commentBttn');
+        const commentInput = document.getElementById('commentInput');
+        const commentsList = document.getElementById('commentsList');
+        const commentSection = document.getElementById('comment-section');
+        const commentIcon = document.getElementById('commentBtn');
+
+        commentIcon.addEventListener('click', () => {
+            commentSection.style.display = 'block';
+            commentBttn.style.display = 'block';
+            commentsList.style.display = 'block';
+        });
+
+        commentBttn.addEventListener('click', () => {
+
+            const commentText = commentInput.value.trim();
+
+            // Check if commentText is NOT empty
+            if (commentText !== "") {
+                const comment = document.createElement('div'); 
+                comment.classList.add('comment'); 
+                
+                // Get the current date and time
+                const now = new Date();
+                const timestamp = now.toLocaleString();
+                comment.innerHTML = `<p>${commentText}</p><span class="timestamp">${timestamp}</span>`;
+
+                commentsList.appendChild(comment); 
+                commentInput.value = ""; 
+
+                commentSection.style.display = 'none';
+                commentBttn.style.display = 'none';
+            } 
+            else {
+                alert("Please enter a comment!");
+            }
+        })
+            
+
+
+
+    </script>
+
+</body>
+</html>
