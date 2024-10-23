@@ -86,7 +86,7 @@ fetch("wildlife.json")
 
         // Add an onclick event to navigate to wildlife.html and pass parameters in the URL
         cardItem.onclick = () => {
-            window.location.href = `wildlife.html?name=${encodeURIComponent(item.name)}&bio=${encodeURIComponent(item.bio)}&details=${encodeURIComponent(item.details)}&imageUrl=${encodeURIComponent(item.imageUrl)}`;
+            window.location.href = `blog.html?name=${encodeURIComponent(item.name)}&bio=${encodeURIComponent(item.bio)}&details=${encodeURIComponent(item.details)}&imageUrl=${encodeURIComponent(item.imageUrl)}`;
         };
 
         cardContainer.appendChild(cardItem);
@@ -151,8 +151,8 @@ fetch("places.json")
 
         // Add an onclick event to navigate to wildlife.html and pass parameters in the URL
         cardItem.onclick = () => {
-            window.location.href = `wildlife.html?name=${encodeURIComponent(item.name)}&bio=${encodeURIComponent(item.bio)}&details=${encodeURIComponent(item.details)}&imageUrl=${encodeURIComponent(item.imageUrl)}`;
-        };
+          window.location.href = `blog.html?name=${encodeURIComponent(item.name)}&bio=${encodeURIComponent(item.bio)}&details=${encodeURIComponent(item.details)}&imageUrl=${encodeURIComponent(item.imageUrl)}`;
+      };
 
         cardContainer.appendChild(cardItem);
         cardCount++;
@@ -166,5 +166,5 @@ fetch("places.json")
   const cardButton2 = document.getElementById ('card_Button2');
 
   cardButton2.addEventListener('click', () => {
-    window.location.href = '#';
+    window.location.href = 'placeMain.html';
   })

@@ -71,7 +71,7 @@
             searchBtn.classList.remove("active");
         };
 
-        fetch('wildlife.json')
+        fetch('places.json')
     .then(response => response.json())
     .then(data => {
         const cardContainer = document.getElementById('card_container');
