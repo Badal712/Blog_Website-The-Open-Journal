@@ -208,7 +208,7 @@ header ul li a:hover:before{
 }
 .card_item{
     width:300px;
-    height: 350px;
+    height: 320px;
     border-radius: 10px;
     background: #1A4D2E;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -244,22 +244,23 @@ header ul li a:hover:before{
     color:#F5EFE6;
 }
 .userData{
-    /* background-color: #F5EFE6; */
+    margin-left: 10px;;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: flex-start;
     height:50px;
-    padding: 0 10px;
+    
 }
 .userData img{
-    width:50px;
-    height: 50px;
+    width:30px;
+    height: 30px;
     border-radius: 50%;
     object-fit: fill;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 .userData .user_Name{
-    font-size: 1rem;
+    margin-top:6px;
+    font-size: 0.7rem;
     font-weight: bold;
     color:#e8dfca;
     

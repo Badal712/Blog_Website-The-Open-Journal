@@ -1,0 +1,81 @@
+[
+    {
+        "user": "Simun Priyadarshini",
+        "photo": "https://img.buzzfeed.com/buzzfeed-static/static/2016-03/15/9/enhanced/webdr03/original-12981-1458047333-9.jpg",
+        "name": "OpenAIs",
+        "imageUrl": "https://i.ytimg.com/vi/M3m6NpUF9KY/maxresdefault.jpg",
+        "bio": "OpenAI reportedly plans to release its Orion AI model by December",
+        "details": "OpenAI is reportedly planning to release its next frontier AI model, codenamed Orion inside the company, by December of this year, The Verge reported on Thursday. Unlike previous releases, the company reportedly plans to release the model gradually to trusted partners before a broader rollout through ChatGPT. An OpenAI spokesperson tells TechCrunch the report is not accurate but would not elaborate further. The Verge writes that Microsoft engineers expect to receive access to Orion as early as November, although it’s unclear what OpenAI will ultimately call the model. The o1 series of models was codenamed “strawberry” inside OpenAI for months before it was released.",
+        "website" : "https://techcrunch.com/2024/10/24/openai-reportedly-plans-to-release-its-orion-ai-model-by-december/"
+    },
+    {
+        "user": "Sushant Singh",
+        "photo": "https://img.freepik.com/premium-photo/man-solid-color-background-with-fear-face-expression-ai-generative_781958-2236.jpg",
+        "name": "commercial eVTOL",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2021/06/Joby-Aviation_Aircraft_3.jpg?resize=1280,853",
+        "bio": "Joby launches $200M public offering ahead of 2025 commercial eVTOL release",
+        "details": "Electric vertical takeoff and landing vehicle startup Joby Aviation has launched a public offering to sell up to $200 million of its shares of common stock, per a regulatory filing. Joby said it will use the proceeds from the raise — together with its existing cash — to fund its certification and manufacturing efforts, prepare for commercial launch in 2025, and for general working capital. The eVTOL firm added that it intends to grant the underwriters a 30-day option to purchase an additional $30 million shares of its common stock. Joby plans to launch air taxis for urban transportation next year in New York City and Los Angeles alongside partners Delta Air Lines and Uber, as well as in Dubai and Abu Dhabi. The startup also has a $55 million contract with the Department of Defense.",
+        "Website": "https://techcrunch.com/2024/10/24/joby-launches-200m-public-offering-ahead-of-2025-commercial-evtol-release/"
+
+    },
+    {
+        "user" : "Saumendu Das" ,
+        "photo": "https://img.freepik.com/premium-photo/man-solid-color-background-with-smile-face-expression_781958-2514.jpg",
+        "name": "  Lumen Orbit",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/10/GettyImages-1335295270.jpg?resize=1280,720",
+        "bio": "Lumen Orbit closed one of the biggest rounds from Y Combinator’s last cohort",
+        "details": "Lumen Orbit has closed an oversubscribed, eight-figure seed round of more than $10 million, a source familiar with the details told TechCrunch. That would make it one of the hottest deals, if not the hottest deal, of the most recent Y Combinator batch. The Redmond, Washington-based startup is pursuing a moonshot idea to build a network of data centers in space that can scale to a gigawatt capacity and be used to train large AI models. Lumen Orbit declined to comment. The company went through YC’s 2024 summer batch and garnered a significant amount of attention from VCs, multiple VCs told TechCrunch. This interest led to an extremely competitive deal process for the startup’s seed round.",
+        "Website": "https://techcrunch.com/2024/10/24/lumen-orbit-closed-one-of-the-biggest-rounds-from-y-combinators-last-cohort/"
+
+    },
+    {
+        "user": "Suraj singh",
+        "photo": "https://th.bing.com/th/id/OIP.2O5E2tC_wtdqlB6o6VP9tAHaHa?rs=1&pid=ImgDetMain",
+        "name": "Apple",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/07/GettyImages-2156422057.jpg?resize=1280,847",
+        "bio": "Apple will pay security researchers up to $1 million to hack its private AI cloud",
+        "details": "Ahead of the debut of Apple’s private AI cloud next week, dubbed Private Cloud Compute, the technology giant says it will pay security researchers up to $1 million to find vulnerabilities that can compromise the security of its private AI cloud. In a post on Apple’s security blog, the company said it would pay up to the maximum $1 million bounty to anyone who reports exploits capable of remotely running malicious code on its Private Cloud Compute servers. Apple said it would also award researchers up to $250,000 for privately reporting exploits capable of extracting users’ sensitive information or the prompts that customers submit to the company’s private cloud.",
+        "Website": "https://techcrunch.com/2024/10/24/apple-will-pay-security-researchers-up-to-1-million-to-hack-its-private-ai-cloud/"
+
+    },
+    {
+        "user": "C Payal Madhuchanda",
+        "photo": "https://th.bing.com/th/id/OIP.AGrIyOiAb5EVX_mezutCPAHaJ4?w=1500&h=2000&rs=1&pid=ImgDetMain",
+        "name": "internet backdoor law",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/10/flashing-router-datacenter-wiretap.gif?w=1024",
+        "bio": "The 30-year-old internet backdoor law that came back to bite.",
+        "details": "News broke this weekend that China-backed hackers have compromised the wiretap systems of several U.S. telecom and internet providers, likely in an effort to gather intelligence on Americans. The wiretap systems, as mandated under a 30-year-old U.S. federal law, are some of the most sensitive in a telecom or internet provider’s network, typically granting a select few employees nearly unfettered access to information about their customers, including their internet traffic and browsing histories. ",
+        "Website": "https://techcrunch.com/2024/10/07/the-30-year-old-internet-backdoor-law-that-came-back-to-bite/"
+
+    },
+    {
+        "user": "Barsha Rani Sahoo",
+        "photo": "https://img.freepik.com/premium-photo/asian-girl-wearing-shalwar-kameez_785565-1946.jpg",
+        "name": "Qualcomm lays",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/09/qualcomm-layoff-san-diego.jpg?resize=1280,853",
+        "bio": "Chipmaker Qualcomm lays off hundreds of workers in San Diego",
+        "details": "Qualcomm, which makes chips for smartphones, said it will lay off 226 workers in San Diego later this year, according to a California WARN notice published this week. The layoffs, which were first reported by The San Diego Union-Tribune, will take effect the week of November 12. The layoffs affect employees at 16 facilities across San Diego, including the company’s headquarters, which has a cybersecurity presence. It’s unclear if the cybersecurity team is affected, and a Qualcomm spokesperson declined to say when asked by TechCrunch. ",
+        "Website": "https://techcrunch.com/2024/09/19/chipmaker-qualcomm-lays-off-hundreds-of-workers-in-san-diego/"
+
+    },
+    {
+        "user": "Somya Sahani",
+        "photo": "https://i.pinimg.com/736x/64/a9/a0/64a9a0c62993c27c8cfd6c38d1e2088d.jpg",
+        "name": "Discord",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/09/discord-app-logo.jpg?resize=1280,853",
+        "bio": "Discord launches end-to-end encrypted voice and video chats",
+        "details": "Discord, one of the largest group chat apps in the world, announced on Tuesday that audio and video calls inside the platform will now be end-to-end encrypted (E2EE), meaning even Discord won’t know what users in those conversations talk about. In the last 10 years, end-to-end encrypted chat went from being a rare exception — think Skype in the mid-2000s — to a technology used by the world’s most popular chat apps, such as iMessage, WhatsApp, Signal, and Facebook Messenger, among others. Discord was born as a group chat platform for gamers, with an emphasis on audio calls for users playing online games together, but also became popular with people who simply want a place where a large number of people can interact. ",
+        "Website": "https://techcrunch.com/2024/09/17/discord-launches-end-to-end-encrypted-voice-and-video-chats/"
+
+    },
+    {
+        "user": "Debabrata Pati",
+        "photo": "https://th.bing.com/th/id/OIP.93BPkhnCvQ7pX9ekEfz3UAHaHa?rs=1&pid=ImgDetMain",
+        "name": "cyberattack",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/09/deepwater-horizon-halliburton-oil-spill.jpg?resize=1280,853",
+        "bio": "Halliburton confirms data was stolen in ongoing cyberattack.",
+        "details": "Energy giant Halliburton has confirmed its systems were hacked and that intruders “accessed and exfiltrated information” following a cyberattack last week. In a brief filing with government regulators on Tuesday, Halliburton said it was “evaluating the nature and scope of the [stolen] information,” and what data breach notifications it is required to make. Halliburton last week said it took some of its systems offline following the detection of the cyberattack. The company now says it is “working to identify effects of the incident” on its ongoing oil and fracking operations.",
+        "Website": "https://techcrunch.com/2024/09/03/halliburton-confirms-data-was-stolen-in-ongoing-cyberattack/"
+
+    }
+]

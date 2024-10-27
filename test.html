@@ -5,113 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Like and Comment Section</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: auto;
-        }
-        .post {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .like-section, .comment-section {
-            margin-top: 15px;
-        }
-        .like-btn {
-            background-color: #008CBA;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .like-btn:hover {
-            background-color: #006f99;
-        }
-        .comment-box {
-            margin-top: 10px;
-        }
-        .comment-box textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .comment-box button {
-            margin-top: 5px;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .comment-box button:hover {
-            background-color: #45a049;
-        }
-        .comments-list {
-            margin-top: 10px;
-        }
-        .comment {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
+       /* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #f0f4f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main {
+    padding: 20px;
+}
+
+.blog-posts {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.blog-posts h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.posts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.post h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.post p {
+    color: #666;
+}
+
+.post a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.socials a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">TechBlog</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="post">
-        <h2>My Awesome Post</h2>
-        <p>This is an example of a post that can be liked and commented on. Feel free to interact below!</p>
-
-        <!-- Like Section -->
-        <div class="like-section">
-            <button class="like-btn" id="likeBtn">Like <span id="likeCount">0</span></button>
-        </div>
-
-        <!-- Comment Section -->
-        <div class="comment-section">
-            <h4>Leave a Comment:</h4>
-            <div class="comment-box">
-                <textarea id="commentInput" rows="3" placeholder="Write a comment..."></textarea>
-                <button id="commentBtn">Post Comment</button>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Explore the Future of Technology</h1>
+                <p>Stay updated with the latest trends, reviews, and breakthroughs in the tech world.</p>
+                <a href="#latest-articles" class="cta-button">Read Latest Articles</a>
             </div>
-            <div class="comments-list" id="commentsList">
-                <!-- Comments will be displayed here -->
+            <div class="hero-image">
+                <img src="tech-hero.jpg" alt="Technology Image">
             </div>
+        </section>
+
+        <section class="blog-posts">
+            <h2>Latest Articles</h2>
+            <div class="posts-container">
+                <article class="post">
+                    <img src="post1.jpg" alt="Post 1">
+                    <h3>5 AI Tools Changing the World</h3>
+                    <p>Explore the cutting-edge AI tools reshaping industries and how you can leverage them.</p>
+                    <a href="#">Read more</a>
+                </article>
+                <article class="post">
+                    <img src="post2.jpg" alt="Post 2">
+                    <h3>The Future of Web Development</h3>
+                    <p>Web development is constantly evolving. Learn the latest trends shaping the future.</p>
+                    <a href="#">Read more</a>
+                </article>
+                <article class="post">
+                    <img src="post3.jpg" alt="Post 3">
+                    <h3>Best Gadgets of 2024</h3>
+                    <p>Find out the top gadgets that have revolutionized the tech space this year.</p>
+                    <a href="#">Read more</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechBlog | All rights reserved</p>
+        <div class="socials">
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
         </div>
-    </div>
+    </footer>
 
-    <script>
-        // Like functionality
-        let likeCount = 0;
-        const likeBtn = document.getElementById('likeBtn');
-        const likeCountSpan = document.getElementById('likeCount');
-
-        likeBtn.addEventListener('click', () => {
-            likeCount++;
-            likeCountSpan.textContent = likeCount;
-        });
-
-        // Comment functionality
-        const commentBtn = document.getElementById('commentBtn');
-        const commentInput = document.getElementById('commentInput');
-        const commentsList = document.getElementById('commentsList');
-
-        commentBtn.addEventListener('click', () => {
-            const commentText = commentInput.value.trim();
-            if (commentText !== "") {
-                const comment = document.createElement('div');
-                comment.classList.add('comment');
-                comment.textContent = commentText;
-                commentsList.appendChild(comment);
-                commentInput.value = ""; // Clear input field
-            } else {
-                alert("Please enter a comment!");
-            }
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
