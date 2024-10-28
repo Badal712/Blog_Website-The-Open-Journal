@@ -1,223 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like and Comment Section</title>
-    <style>
-       /* General styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Open Journal</title>
+  <style>
+  .footer {
+  background: linear-gradient(135deg, #222, #444);
+  color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
+.footer-logo h3 {
+  font-size: 2em;
+  color: #ffdd57;
+  margin-bottom: 10px;
 }
 
-.nav-links li {
-    display: inline;
-    margin: 0 10px;
+.footer-logo p {
+  color: #ddd;
 }
 
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
+.footer-nav,
+.footer-social,
+.footer-newsletter {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-nav h4,
+.footer-social h4,
+.footer-newsletter h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.footer-nav a,
+.footer-social .social-link {
+  display: block;
+  color: #bbb;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover,
+.footer-social .social-link:hover {
+  color: #ffdd57;
+}
+
+.footer-newsletter p {
+  color: #bbb;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+  display: flex;
+}
+
+.footer-newsletter input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1em;
+}
+
+.footer-newsletter button {
+  padding: 10px;
+  border: none;
+  background-color: #ffdd57;
+  color: #333;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e6c353;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
     align-items: center;
-    padding: 60px;
-    background-color: #f0f4f8;
-    border-bottom: 1px solid #ddd;
+    gap: 20px;
+  }
 }
 
-.hero-content {
-    max-width: 50%;
-}
 
-.hero-content h1 {
-    font-size: 3em;
-    color: #333;
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    color: #666;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
-.hero-image {
-    max-width: 45%;
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-main {
-    padding: 20px;
-}
-
-.blog-posts {
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-.blog-posts h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.posts-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.post {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-bottom: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.post img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-}
-
-.post h3 {
-    font-size: 1.5em;
-    margin: 15px 0;
-}
-
-.post p {
-    color: #666;
-}
-
-.post a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.post a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.socials a {
-    color: #007BFF;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.socials a:hover {
-    text-decoration: underline;
-}
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">TechBlog</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Explore the Future of Technology</h1>
-                <p>Stay updated with the latest trends, reviews, and breakthroughs in the tech world.</p>
-                <a href="#latest-articles" class="cta-button">Read Latest Articles</a>
+    <footer class="footer">
+        <div class="footer-content">
+          
+          <div class="footer-logo">
+            <h3>The Open Journal</h3>
+            <p>Discover, Learn, and Reflect.</p>
+          </div>
+      
+          <div class="footer-sections">
+      
+            <div class="footer-nav">
+              <h4>Explore</h4>
+              <a href="#home">Home</a>
+              <a href="#about">About Us</a>
+              <a href="#articles">Articles</a>
+              <a href="#contact-section">Contact</a>
             </div>
-            <div class="hero-image">
-                <img src="tech-hero.jpg" alt="Technology Image">
+      
+            <div class="footer-social">
+              <h4>Connect</h4>
+              <a href="#" class="social-link facebook">Facebook</a>
+              <a href="#" class="social-link twitter">Twitter</a>
+              <a href="#" class="social-link instagram">Instagram</a>
             </div>
-        </section>
-
-        <section class="blog-posts">
-            <h2>Latest Articles</h2>
-            <div class="posts-container">
-                <article class="post">
-                    <img src="post1.jpg" alt="Post 1">
-                    <h3>5 AI Tools Changing the World</h3>
-                    <p>Explore the cutting-edge AI tools reshaping industries and how you can leverage them.</p>
-                    <a href="#">Read more</a>
-                </article>
-                <article class="post">
-                    <img src="post2.jpg" alt="Post 2">
-                    <h3>The Future of Web Development</h3>
-                    <p>Web development is constantly evolving. Learn the latest trends shaping the future.</p>
-                    <a href="#">Read more</a>
-                </article>
-                <article class="post">
-                    <img src="post3.jpg" alt="Post 3">
-                    <h3>Best Gadgets of 2024</h3>
-                    <p>Find out the top gadgets that have revolutionized the tech space this year.</p>
-                    <a href="#">Read more</a>
-                </article>
+      
+            <div class="footer-newsletter">
+              <h4>Stay Updated</h4>
+              <p>Subscribe to our newsletter</p>
+              <form action="#" method="post">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+              </form>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 TechBlog | All rights reserved</p>
-        <div class="socials">
-            <a href="#">Facebook</a> | 
-            <a href="#">Twitter</a> | 
-            <a href="#">LinkedIn</a>
+      
+          </div>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 The Open Journal. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+    </body>
+    </html>

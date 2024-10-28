@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 body{
    background: #F5EFE6;
    min-height: 100vh;
@@ -640,6 +639,120 @@ header ul li a:hover:before{
     background-color: #1A4D2E;
 }
 
+/* Footer Section */
+.footer {
+    background: linear-gradient(135deg, #222, #444);
+    color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    Top: 515%;
+    width:100%
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo h3 {
+    font-size: 2em;
+    color: #E8DFCA;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    color: #ddd;
+  }
+  
+  .footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .footer-nav,
+  .footer-social,
+  .footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-nav h4,
+  .footer-social h4,
+  .footer-newsletter h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #E8DFCA;
+  }
+  
+  .footer-nav a,
+  .footer-social .social-link {
+    display: block;
+    color: #bbb;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover,
+  .footer-social .social-link:hover {
+    color: #E8DFCA;
+  }
+  
+  .footer-newsletter p {
+    color: #bbb;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-newsletter form {
+    display: flex;
+  }
+  
+  .footer-newsletter input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+  }
+  
+  .footer-newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #4f6f52;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-newsletter button:hover {
+    background-color: #1A4D2E;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #555;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #888;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
+
+
 /* for mobile responsive design */
 @media (max-width: 800px){
     header .navigat{
@@ -798,7 +911,15 @@ header ul li a:hover:before{
         top: 620%;
     }
     .contact{
-        top:720%
+        top:720%;
+    }
+    .footer{
+        top:820%;
+    }
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
 @media (min-width: 801px) and (max-width : 1250px){
@@ -906,4 +1027,7 @@ header ul li a:hover:before{
    .contact{
     top: 540%
    }
+   .footer{
+    top:640%;
+}
 }
