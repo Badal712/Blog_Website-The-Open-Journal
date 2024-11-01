@@ -187,3 +187,37 @@ fetch("places.json")
         }
     }
 })
+
+
+//for Smooth Scrolling
+const sections = [
+  document.getElementById("hero_section"),
+  document.getElementById("card_section"),
+  document.getElementById("frame_section"),
+  document.getElementById("testimonials"),
+  document.getElementById('contact')
+];
+
+let currentSectionIndex = 0;
+
+const observerOptions = {
+  threshold: 0.3
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          const index = sections.indexOf(entry.target);
+          if (index !== currentSectionIndex) {
+              currentSectionIndex = index;
+              smoothScrollToSection(index);
+          }
+      }
+  });
+}, observerOptions);
+
+const smoothScrollToSection = (index) => {
+  sections[index].scrollIntoView({ behavior: "smooth" });
+};
+
+sections.forEach(section => observer.observe(section));
